@@ -28,3 +28,6 @@ sb.distplot(data.Age,color='green')
 iris=sb.load_dataset('iris')
 sb.jointplot(x='petal_length',y='petal_width',data=iris) 
 sb.pairplot(iris) #allvariables
+
+#ex filling missing values
+data['Age'].fillna(value=data['Age'].mean(),inplace='True')
