@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import seaborn as ss
+import seaborn as sb
 
 min=1
 max=77
@@ -21,3 +21,10 @@ data.describe() # picks numerical columns
 data.iloc[2] #3d line using index
 data.loc[<anid>] #line infos using unique info
 data.iloc[0:4] 
+
+#supposed data contains a column 'Age'
+sb.distplot(data.Age,color='green')
+
+iris=sb.load_dataset('iris')
+sb.jointplot(x='petal_length',y='petal_width',data=iris) 
+sb.pairplot(iris) #allvariables
