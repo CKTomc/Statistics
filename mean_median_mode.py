@@ -29,4 +29,9 @@ if lg%2==0:
 else:
   median=array[round(lg/2)]
   
-freq=defaultdict(int)
+unique, counts = np.unique(array, return_counts=True)
+mode=unique[np.argmax(counts)]
+
+print(mean)
+print(median)
+print(mode)
