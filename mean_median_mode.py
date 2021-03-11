@@ -17,7 +17,6 @@ print(mode)
 
 """using explicit test cases"""
 import sys
-from random import randrange
 import numpy as np
 
 n=int(input())
