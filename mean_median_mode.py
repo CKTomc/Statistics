@@ -25,7 +25,7 @@ mean=round(sum(array)/lg,1)
 
 
 if lg%2==0:
-  median=round((array[lg/2]+array[lg/2-1])/2,1)
+  median=round((array[int(lg/2)]+array[int(lg/2)-1])/2,1)
 else:
   median=array[round(lg/2)]
   
