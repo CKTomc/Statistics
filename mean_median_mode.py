@@ -16,7 +16,7 @@ print(mode)
 """using test cases"""
 from random import randrange
 import numpy as np
-from collections import defaultdict
+
 n=randrange(10,2501)
 array=np.random.randint(10001, size=n)
 array=np.sort(array)
